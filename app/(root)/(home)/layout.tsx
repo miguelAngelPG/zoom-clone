@@ -1,6 +1,15 @@
 import { Navbar } from '@/components/Navbar'
 import { Sidebar } from '@/components/Sidebar'
+import { Metadata } from 'next';
 import React, { ReactNode } from 'react'
+
+export const metadata: Metadata = {
+    title: "Zoom clone",
+    description: "Video conferencing app clone",
+    icons: {
+      icon: "/icons/yoom-logo.svg",
+    }
+};
 
 const HomeLayout = ({children}: {children: ReactNode}) => {
     return (
