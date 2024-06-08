@@ -40,7 +40,6 @@ export const useGetCalls = () => {
     }, [client, user?.id])
 
     const now = new Date()
-    console.log(calls, 'calls')
 
     const endedCalls = calls.filter(({ state: { startsAt, endedAt }}: Call) => {
         return (startsAt && new Date(startsAt) < now || !!endedAt)
